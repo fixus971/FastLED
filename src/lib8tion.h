@@ -397,7 +397,7 @@ FASTLED_NAMESPACE_BEGIN
 /// Conversion from 16-bit fixed point (::sfract15) to IEEE754 32-bit float.
 LIB8STATIC float sfract15ToFloat( sfract15 y)
 {
-    return y / 32768.0;
+    return y / 32768.f;
 }
 
 /// Conversion from IEEE754 float in the range (-1,1) to 16-bit fixed point (::sfract15).
@@ -405,7 +405,7 @@ LIB8STATIC float sfract15ToFloat( sfract15 y)
 /// representable range is 0.99996948242 to -0.99996948242, in steps of 0.00003051757.
 LIB8STATIC sfract15 floatToSfract15( float f)
 {
-    return f * 32768.0;
+    return f * 32768.f;
 }
 
 /// @} FloatConversions
