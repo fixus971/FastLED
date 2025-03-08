@@ -23,15 +23,7 @@
 #endif
 #endif
 
-// ESP_LOGE("#### FastLED", "%s", (fl::StrStream() << MSG).c_str()); \
-//^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+// ESP_LOGE("#### FastLED", "%s", (fl::StrStream() << MSG).c_str());
+//^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 // NOTE DELETED LINE BEFORE ESP_ERROR_CHECK because I cant correct the error: 
-//
 // .pio/libdeps/debug/FastLED/src/fl/assert.h:19:13: error: there are no arguments to 'ESP_LOGE' that depend on a template parameter, so a declaration of 'ESP_LOGE' must be available [-fpermissive]
-//              ESP_LOGE("#### FastLED", "%s", (fl::StrStream() << MSG).str().c_str()); \             ^~~~~~~~
-// .pio/libdeps/debug/FastLED/src/fl/assert.h:19:13: note: in definition of macro 'FASTLED_ASSERT'
-//              ESP_LOGE("#### FastLED", "%s", (fl::StrStream() << MSG).str().c_str()); \             ^~~~~~~~
-// .pio/libdeps/debug/FastLED/src/fl/assert.h:19:13: note: (if you use '-fpermissive', G++ will accept your code, but allowing the use of an undeclared name is deprecated)    
-//              ESP_LOGE("#### FastLED", "%s", (fl::StrStream() << MSG).str().c_str()); \             ^~~~~~~~
-// .pio/libdeps/debug/FastLED/src/fl/assert.h:19:13: note: in definition of macro 'FASTLED_ASSERT'
-//              ESP_LOGE("#### FastLED", "%s", (fl::StrStream() << MSG).str().c_str()); \             ^~~~~~~~
